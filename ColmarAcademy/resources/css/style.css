@@ -1,0 +1,246 @@
+
+/* NOTE to REVIEWER: Due to the high density of the course and a lack of time on my side in the last couple of weeks, I was only able to work on an unrefined desktop version of the project. */
+
+/* UNIVERSAL STYLES */
+
+body {
+    color: rgb(74,74,74);
+    width: 100%;
+}
+
+.grey-font {
+    color: rgb(192,192,192);
+}    
+
+/* HEADER */
+
+header {
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo-and-name {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+header nav a {
+    color: rgb(74,74,74);
+    text-decoration: none;
+    margin: auto 8px;
+}
+
+/* BANNER section - Learn something new everyday */
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(216,216,216);
+    justify-content: flex-start;
+}
+
+.banner img {
+    width: 60%;
+    margin: 32px 40px 32px 24px;
+}
+
+.banner_info {
+    width: 300px;
+}
+
+.start-here {
+    color: rgb(255,255,255);
+    background-color: rgb(74,74,74);
+    padding: 8px;
+    text-align: center;
+}
+
+/* INFORMATION section */
+
+.info-section {
+    display: flex;
+    width: 100%;
+    align-items: stretch; /* PROBLEM: Why the .info-main and .info-sidebar flex containers (both flex items nested in .info-section flex container) do not align vertically? */
+}
+
+.info-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+}
+
+.info-main img {
+    margin: 32px 24px;
+    width: 90%;    /* PROBLEM: Img tends to push sidebar aside off the edge. How to avoid and make it stretch just up to a marging/padding of 24px to the right? */
+}
+
+.info-main h1, p {
+        margin: 24px;
+}
+
+.info-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 423px;
+    padding: 16px 0;
+    border-left: 1px solid rgb(224,226,226);
+}
+
+.info-sidebar img {
+    width: 35%;
+    margin: 16px;
+}
+
+.info-sidebar a {
+    text-decoration: none;
+}
+
+.sidebar-elem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: inherit;
+}
+
+.sidebar-elem h2, p, a {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.sidebar-text {
+    max-width: 65%;
+}
+
+#guest-lecture {
+    background-color: rgb(216,216,216);
+}
+
+/* COURSES section */
+
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    background-color: rgb(216,216,216);
+}
+
+.courses-section h1 {
+    justify-content: center;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.course-elem {
+    display: flex;
+    /* max-height: 220px; */
+    width: 25%;
+    margin: auto 16px;
+    flex-direction: column;
+}
+
+.course-elem img {
+    width: 100%;
+}
+
+.course-text {
+    display: block;
+    padding: 16px;
+    line-height: 8px;
+    height: 100%;
+}
+
+.course-text {
+    margin-top: 8px;
+}
+
+/* THESIS section */
+
+.exhibit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px;
+}
+
+.exhibit-container {
+    display: flex;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.main-video {
+    width: 60%;
+}
+
+.videos-list {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.main-video video {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.videos-list .video-elem {
+    width: 100%;
+    display: flex;
+}
+
+.video-elem {
+    padding: 16px;
+    height: 168px;
+    width: 423px;
+}
+
+.video-elem-img {
+    width: 35%;
+}
+
+.video-elem-img img {
+    width: 100%;
+}
+
+.video-elem-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+}
+
+/* FOOTER section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(224,226,226);
+    width: 100%;
+}
+
+footer .privacy {
+    display: flex;
+}
+
+footer .privacy a {
+    padding-left: 24px;
+    text-decoration: none;
+    color: rgb(74,74,74);
+}
